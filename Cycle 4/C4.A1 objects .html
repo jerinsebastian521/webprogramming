@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <h2>Math  Functions</h2>
+<button onclick="m1()">Math.PI</button> </br>
+<button onclick="m2()">Math.round(4.4)</button></br>
+<button onclick="m3()">Math.pow(8,2)</button></br>
+<button onclick="m4()">Math.sqrt(64)</button></br>
+<button onclick="m5()">Math.min(0, 150, 30, 20, -8, -200);</button></br>
+<p id="demo"></p></br>
+ <h2>String  Functions</h2>
+<button onclick="s1()">txt.length ,txt = "ABCD"</button></br>
+<button onclick="s2()">str.indexOf("locate") ,Please locate where 'locate' occurs!</button></br>
+<button onclick="s3()">str.search("locate"),Please locate where 'locate' occurs!</button></br>
+<button onclick="s4()">str.slice(7,13),str = "Apple, Banana, Kiwi"</button></br>
+<p id="demo1"></p>
+
+<script>
+function m1(){
+
+document.getElementById("demo").innerHTML = Math.PI;
+}
+function m2(){
+
+document.getElementById("demo").innerHTML = Math.round(4.4);
+}
+function m3(){
+document.getElementById("demo").innerHTML = Math.pow(8,2);
+}
+function m4(){
+document.getElementById("demo").innerHTML = Math.sqrt(64);
+}
+function m5(){
+document.getElementById("demo").innerHTML = Math.min(0, 150, 30, 20, -8, -200);;
+}
+function s1(){
+var txt = "ABCD";
+var sln = txt.length;
+document.getElementById("demo1").innerHTML = sln;
+}
+function s2(){
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+document.getElementById("demo1").innerHTML = pos;
+}
+function s3(){
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+document.getElementById("demo1").innerHTML = pos;
+}
+function s4(){
+	var str = "Apple, Banana, Kiwi";
+var res = str.slice(7,13);
+document.getElementById("demo1").innerHTML = res; 
+}
+</script>
+ </body>
+ </html>

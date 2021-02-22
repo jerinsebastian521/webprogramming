@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function add(){
+var a,b,c,d;
+a=Number(document.getElementById("name").value);
+b=Number(document.getElementById("age").value);
+c=new Date().getFullYear();
+d= c - b;
+document.getElementById("answer").value= d;
+}
+</script>
+</head>
+<body>
+Enter your name : <input id="name">
+Enter your DOB year: <input id="age">
+<button onclick="add()">Submit</button><br><br>
+
+Age:<input id="answer" placeholder="age">
+</body>
+</html>
